@@ -13,4 +13,11 @@
         <property name="prefix" value="/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/show"/>
+            <bean class="com.interceptor.StudentInfoInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

@@ -11,19 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/submit", method = RequestMethod.POST)
-    public String submitForm(@ModelAttribute("user") User user, Model model){
-
-        model.addAttribute("user",user);
-        return "success";
+    @RequestMapping("/show")
+    public String show() {
+        // 在这里添加您的业务逻辑，例如从数据库中获取学生信息
+        return "show";
     }
 
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public String hello(){
 
-        System.out.println("你好");
-        return "login";
+    @RequestMapping("/input")
+    public String input() {
+        // 在这里添加您的业务逻辑，例如从数据库中获取学生信息
+        return "input";
     }
-
 
 }
