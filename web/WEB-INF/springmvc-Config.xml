@@ -16,7 +16,7 @@
 
     <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/show"/>
+            <mvc:mapping path="/show.jsp"/>
             <bean class="com.interceptor.StudentInfoInterceptor" />
         </mvc:interceptor>
     </mvc:interceptors>
